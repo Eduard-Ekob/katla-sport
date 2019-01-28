@@ -28,13 +28,21 @@ namespace KatlaSport.Services.HiveManagement
         public bool IsDeleted { get; set; }
 
         /// <summary>
+<<<<<<< HEAD
         /// Gets or sets a store hive identifier.
         /// </summary>
         public int StoreHiveId { get; set; }
 
         /// <summary>
+=======
+>>>>>>> step14
         /// Gets or sets a timestamp when the hive section was updated last time.
         /// </summary>
         public DateTime LastUpdated { get; set; }
+
+        /// <summary>
+        /// Gets or sets a store hive identifier.
+        /// </summary>
+        public int StoreHiveId { get; set; }
     }
 }
