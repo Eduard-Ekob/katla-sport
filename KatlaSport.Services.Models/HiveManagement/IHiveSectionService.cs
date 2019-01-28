@@ -29,10 +29,33 @@ namespace KatlaSport.Services.HiveManagement
         Task<List<HiveSectionListItem>> GetHiveSectionsAsync(int hiveId);
 
         /// <summary>
+        /// Creates a hive section.
+        /// </summary>
+        /// <param name="hiveId">A hive identifier.</param>
+        /// <param name="createRequest">Create request.</param>
+        /// <returns>A <see cref="Task{HiveSection}"/>.</returns>
+        Task<HiveSection> CreateHiveSectionAsync(int hiveId, UpdateHiveSectionRequest createRequest);
+
+        /// <summary>
+        /// Updates a hive section.
+        /// </summary>
+        /// <param name="hiveSectionId">A hive section identifier.</param>
+        /// <param name="updateRequest">Update request.</param>
+        /// <returns>A <see cref="Task{HiveSection}"/>.</returns>
+        Task<HiveSection> UpdateHiveSectionAsync(int hiveSectionId, UpdateHiveSectionRequest updateRequest);
+
+        /// <summary>
+        /// Deletes a hive section.
+        /// </summary>
+        /// <param name="hiveSectionId">The hive section identifier.</param>
+        /// <returns>A <see cref="Task"/>.</returns>
+        Task DeleteHiveSectionAsync(int hiveSectionId);
+
+        /// <summary>
         /// Sets deleted status for a hive section.
         /// </summary>
         /// <param name="hiveSectionId">A hive section identifier.</param>
-        /// <param name="deletedStatus">Status.</param>
+        /// <param name="deletedStatus">.</param>
         /// <returns>A <see cref="Task"/>.</returns>
         Task SetStatusAsync(int hiveSectionId, bool deletedStatus);
     }
