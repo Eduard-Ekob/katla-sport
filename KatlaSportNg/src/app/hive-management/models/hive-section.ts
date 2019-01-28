@@ -5,6 +5,6 @@ export class HiveSection {
         public code: string,
         public isDeleted: boolean,
         public lastUpdated: string,
-        public HiveStoreId: number)
+        public StoreHiveId: number)
         { }
 }
